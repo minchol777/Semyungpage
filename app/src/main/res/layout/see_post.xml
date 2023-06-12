@@ -14,6 +14,8 @@
         android:text="서버연결실패"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:paddingTop="7dp"
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +30,7 @@
         android:text="서버연결이 실패하면 이 메시지가 보입니다 제발 발표땐 보이지마라..."
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -37,8 +40,8 @@
 
     <ListView
         android:id="@+id/postComment"
-        android:layout_width="361dp"
-        android:layout_height="241dp"
+        android:layout_width="355dp"
+        android:layout_height="190dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -51,12 +54,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="댓글 등록"
+        android:onClick="goAddComments"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/sis"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:background="@drawable/sis"
+        android:text="삭제"
+        android:onClick="sis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

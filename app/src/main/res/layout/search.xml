@@ -23,26 +23,28 @@
         android:id="@+id/search_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_orange"
+        android:onClick="Search"
         android:text="검색"
-        android:textSize="20dp"
         android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219"
-        android:background="@drawable/button_orange"/>
+        app:layout_constraintVertical_bias="0.284" />
 
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="531dp"
+        android:id="@+id/searchList"
+        android:layout_width="350dp"
+        android:layout_height="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.885" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

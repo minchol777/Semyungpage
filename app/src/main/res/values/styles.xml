@@ -11,6 +11,9 @@
         <item name="android:letterSpacing">0.06</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_image</item>
+    </style>
 
 
 </resources>

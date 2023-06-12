@@ -81,4 +81,15 @@ public class AnonyActivity extends AppCompatActivity {
         Intent intent = new Intent(AnonyActivity.this,NoticeboardActivity.class);
         startActivity(intent);
     }
+
+    public void goAddPostA(View view) {
+        Intent intent = new Intent(AnonyActivity.this,AddPostActivity.class);
+        intent.putExtra("boardId",1);
+        startActivity(intent);
+    }
+
+    public void searchA(View view) {
+        Intent intent = new Intent(AnonyActivity.this, SearchActivity.class);
+        startActivity(intent);
+    }
 }

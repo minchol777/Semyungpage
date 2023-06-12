@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/gear"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.SemyungPage"
@@ -16,7 +16,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +29,11 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".AnonyActivity"></activity>
         <activity android:name=".SeePostActivity"></activity>
+        <activity android:name=".AddComments" ></activity>
+        <activity android:name=".AddPostActivity" ></activity>
+        <activity android:name=".SearchActivity" ></activity>
+
+
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

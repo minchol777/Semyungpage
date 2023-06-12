@@ -84,6 +84,7 @@
         android:layout_width="297dp"
         android:layout_height="48dp"
         android:text="등록 하기"
+        android:onClick="addPost"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

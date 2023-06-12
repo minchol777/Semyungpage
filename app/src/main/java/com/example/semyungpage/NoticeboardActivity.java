@@ -59,7 +59,7 @@ public class NoticeboardActivity extends AppCompatActivity {
             public void onResponse(Call<List<PostTitleResponseDTO>> call, Response<List<PostTitleResponseDTO>> response) {
                 if (response.isSuccessful()) {
                         posts.clear(); // 기존 데이터를 지우고
-                        posts.addAll(response.body()); // 새로운 데이터를 추가합니다.
+                        posts.addAll(response.body()); // 새로운 데이터를 추가.
                         adapter.notifyDataSetChanged(); // 어뎁터에게 전달 
 
                 } else {
@@ -86,4 +86,14 @@ public class NoticeboardActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goAddPostN(View view) {
+        Intent intent = new Intent(NoticeboardActivity.this,AddPostActivity.class);
+        intent.putExtra("boardId",1);
+        startActivity(intent);
+    }
+
+    public void searchN(View view) {
+        Intent intent = new Intent(NoticeboardActivity.this, SearchActivity.class);
+        startActivity(intent);
+    }
 }

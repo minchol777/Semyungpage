@@ -1,6 +1,8 @@
 package com.example.semyungpage;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -90,5 +92,45 @@ public class SeePostActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void goAddComments(View view) {
+        Intent intent = new Intent(SeePostActivity.this, AddComments.class);
+        intent.putExtra("postId", postId);
+        startActivity(intent);
+    }
+
+    public void sis(View view) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Server.getSeverurl()) // 여기에 실제 서버 주소를 넣어주세요
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        PostApiService postApi = retrofit.create(PostApiService.class);
+
+        Call<Void> call = postApi.deletePost(postId);
+
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                if(response.isSuccessful()){
+                    Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
+                    startActivity(intent);
+
+                }else{
+                    Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
+                    startActivity(intent);
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
