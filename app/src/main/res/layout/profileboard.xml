@@ -18,62 +18,63 @@
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/images_remo" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/anoy_linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/anoy_linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/anoy_linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/anoy_linearLayout"
+        app:srcCompat="@drawable/button_paleblue" />
 
-    <View
-        android:id="@+id/rectangle_5"
-        android:layout_width="339dp"
-        android:layout_height="55dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/button_paleblue"
+
+
+    <LinearLayout
+        android:id="@+id/anoy_linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="334dp"
-        android:layout_height="48dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
-        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_5">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
 
         <android.widget.Button
             android:id="@+id/profile"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="83dp"
             android:layout_weight="1"
-            android:text="개인 프로필"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:background="@drawable/button_orange"
             android:backgroundTint="@null"
-            />
+            android:text="개인 프로필"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
         <android.widget.Button
             android:id="@+id/profileToNoticeButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="83dp"
             android:layout_weight="1"
+            android:background="@drawable/button_white"
             android:text="정보 게시판"
+            android:onClick="profileToNoticeButton"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:background="@drawable/button_white"/>
+            android:textStyle="bold" />
 
         <android.widget.Button
             android:id="@+id/profileToAnoyButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/button_white"
             android:text="익명 게시판"
+            android:onClick="profileToAnoyButton"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:background="@drawable/button_white"/>
+            android:textStyle="bold" />
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView6"
@@ -98,5 +99,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.62" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

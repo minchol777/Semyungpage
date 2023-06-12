@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#FFffff"
+        android:centerColor="#FFFFFF"
+        android:endColor="#AF81c147"
+        android:angle="45"/>
+    <corners android:radius="10dp" /> <!-- 모서리의 반지름 -->
+</shape>

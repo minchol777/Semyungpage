@@ -17,65 +17,63 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026"
         app:srcCompat="@drawable/images_remo" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/anoy_linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/anoy_linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/anoy_linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/anoy_linearLayout"
+        app:srcCompat="@drawable/button_paleblue" />
 
 
-    <View
-        android:id="@+id/anoy_rectangle_5"
-        android:layout_width="339dp"
-        android:layout_height="55dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/button_paleblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/anoy_imageView"
-        app:layout_constraintVertical_bias="0.039" />
 
     <LinearLayout
         android:id="@+id/anoy_linearLayout"
         android:layout_width="334dp"
-        android:layout_height="48dp"
+        android:layout_height="83dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/anoy_rectangle_5"
-        app:layout_constraintEnd_toEndOf="@+id/anoy_rectangle_5"
-        app:layout_constraintStart_toStartOf="@+id/anoy_rectangle_5"
-        app:layout_constraintTop_toTopOf="@+id/anoy_rectangle_5">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
 
         <android.widget.Button
             android:id="@+id/anoyToProfileButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="개인 프로필"
-            android:onClick="anoyToProfileButton"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:background="@drawable/button_white"
             android:backgroundTint="@null"
-            />
+            android:onClick="anoyToProfileButton"
+            android:text="개인 프로필"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
         <android.widget.Button
             android:id="@+id/anoyToNoticeButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="정보 게시판"
+            android:background="@drawable/button_white"
             android:onClick="anoyToNoticeButton"
+            android:text="정보 게시판"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:background="@drawable/button_white"/>
+            android:textStyle="bold" />
 
         <android.widget.Button
             android:id="@+id/anoyButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/button_orange"
             android:text="익명 게시판"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:background="@drawable/button_orange"/>
+            android:textStyle="bold" />
     </LinearLayout>
+
 
     <android.widget.Button
         android:id="@+id/search_badge"
@@ -84,20 +82,20 @@
         android:background="@drawable/icon_search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <ListView
         android:id="@+id/anoyListView"
-        android:layout_width="410dp"
-        android:layout_height="494dp"
+        android:layout_width="327dp"
+        android:layout_height="367dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.821" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

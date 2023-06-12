@@ -1,9 +1,9 @@
 package com.example.semyungpage.PostInterface;
 
 
-import com.myloginpage.a13456.DTO.PostDTO;
-import com.myloginpage.a13456.DTO.PostResponseDTO;
-import com.myloginpage.a13456.DTO.PostTitleResponseDTO;
+import com.example.semyungpage.DTO.PostDTO;
+import com.example.semyungpage.DTO.PostResponseDTO;
+import com.example.semyungpage.DTO.PostTitleResponseDTO;
 
 import java.util.List;
 

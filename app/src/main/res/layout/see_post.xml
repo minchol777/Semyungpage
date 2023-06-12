@@ -36,6 +36,7 @@
         app:layout_constraintVertical_bias="0.288" />
 
     <ListView
+        android:id="@+id/postComment"
         android:layout_width="361dp"
         android:layout_height="241dp"
         app:layout_constraintBottom_toBottomOf="parent"

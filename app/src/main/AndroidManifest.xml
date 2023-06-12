@@ -27,6 +27,9 @@
         <activity android:name=".NoticeboardActivity"></activity>
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".AnonyActivity"></activity>
+        <activity android:name=".SeePostActivity"></activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
 </manifest>
