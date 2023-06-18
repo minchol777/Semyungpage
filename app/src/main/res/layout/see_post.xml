@@ -8,14 +8,14 @@
 
     <TextView
         android:id="@+id/seeTitle"
-        android:layout_width="365dp"
-        android:layout_height="36dp"
+        android:layout_width="321dp"
+        android:layout_height="37dp"
         android:background="@drawable/button_white"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
         android:text="서버연결실패"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:paddingTop="7dp"
-        android:paddingStart="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,13 +24,13 @@
 
     <TextView
         android:id="@+id/seeMain"
-        android:layout_width="366dp"
-        android:layout_height="243dp"
+        android:layout_width="337dp"
+        android:layout_height="224dp"
         android:background="@drawable/button_white"
+        android:padding="20dp"
         android:text="서버연결이 실패하면 이 메시지가 보입니다 제발 발표땐 보이지마라..."
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -42,6 +42,7 @@
         android:id="@+id/postComment"
         android:layout_width="355dp"
         android:layout_height="190dp"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -75,6 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

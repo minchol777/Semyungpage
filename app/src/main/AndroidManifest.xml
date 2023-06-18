@@ -24,14 +24,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".NoticeboardActivity"></activity>
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".AnonyActivity"></activity>
-        <activity android:name=".SeePostActivity"></activity>
-        <activity android:name=".AddComments" ></activity>
-        <activity android:name=".AddPostActivity" ></activity>
-        <activity android:name=".SearchActivity" ></activity>
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".NoticeboardActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".ProfileActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".AnonyActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".SeePostActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".AddComments"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".AddPostActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".SearchActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
 
 
     </application>

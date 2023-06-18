@@ -109,28 +109,6 @@ public class SeePostActivity extends AppCompatActivity {
 
         Call<Void> call = postApi.deletePost(postId);
 
-        call.enqueue(new Callback<Void>() {
-            @Override
-            public void onResponse(Call<Void> call, Response<Void> response) {
-                if(response.isSuccessful()){
-                    Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
-                    startActivity(intent);
 
-                }else{
-                    Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
-                    startActivity(intent);
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<Void> call, Throwable t) {
-                Toast.makeText(getApplicationContext(), "삭제성공", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SeePostActivity.this,NoticeboardActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

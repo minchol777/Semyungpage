@@ -84,7 +84,7 @@ public class AnonyActivity extends AppCompatActivity {
 
     public void goAddPostA(View view) {
         Intent intent = new Intent(AnonyActivity.this,AddPostActivity.class);
-        intent.putExtra("boardId",1);
+        intent.putExtra("boardId",2);
         startActivity(intent);
     }
 
